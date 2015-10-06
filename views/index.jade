@@ -1,0 +1,46 @@
+//- index.jade
+extends ./layout
+
+block content
+  header
+    nav.white
+      //- div.container
+      div
+        div.row
+          div.col.s12
+            a(href='/').brand-logo.blue-text.text-darken-2
+              //- span MINISTRY OF DEFENCE
+              span Ministry of defence
+
+  div.slider
+    ul.slides
+      li
+        img(src='/images/1.jpg')
+        div.caption.center-align
+          h3 This is our big
+          h5.light.grey-text.text-lighten-3 HOGE HOGE HOGE
+      li
+        img(src='/images/2.jpg')
+        div.caption.left-align
+          h3 This is our big
+          h5.light.grey-text.text-lighten-3 HOGE HOGE HOGE
+      li
+        img(src='/images/3.jpg')
+        div.caption.right-align
+          h3 This is our big
+          h5.light.grey-text.text-lighten-3 HOGE HOGE HOGE
+      li
+        img(src='/images/4.jpg')
+        div.caption.center-align
+          h3 This is our big
+          h5.light.grey-text.text-lighten-3 HOGE HOGE HOGE
+  div hoge
+
+
+  script.
+    $(document).ready(function(){
+      $('.slider').slider({
+        full_width: true,
+        indicators: false,
+      });
+    });
