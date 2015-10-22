@@ -37,7 +37,7 @@ block content
     div.container
       div.row
         div.col.s12.center
-          h2 About <span class='strong'>Ministry of Defence</span>
+          h2 防衛装備庁とは
           p 
           | 防衛装備庁（ぼうえいそうびちょう）は、
           | 装備品等について、その開発及び生産のための基盤の強化を図りつつ、研究開発、調達、補給及び管理の適正かつ効率的な遂行並びに国際協力の推進を図ることを任務とする、防衛省の外局である。2015年（平成27年）10月1日発足。
@@ -52,15 +52,15 @@ block content
     div.container
       div.row
         div.col.s12.m4.center
-          i.material-icons play_arrow
+          i.material-icons account_balance
           h5 防衛装備品の効率的な取得
           p これまで、防衛省・自衛隊では、防衛装備品の取扱いに関する業務を行う組織・部署が細分化されておりました。これらの組織が統合された防衛装備庁では、...
         div.col.s12.m4.center
-          i.material-icons play_arrow
+          i.material-icons build
           h5 諸外国との防衛装備・技術協力の強化
           p 防衛装備移転三原則のもとで、これまで以上に平和貢献・国際協力に寄与していくとともに、同盟国たる米国およびそれ以外の諸国との防衛装備・技術協力をより積極的に進めていくことを通じ、地域の平和と安定を維持し、...
         div.col.s12.m4.center
-          i.material-icons play_arrow
+          i.material-icons autorenew
           h5 技術力の強化と運用ニーズの円滑・迅速な反映
           p 厳しさを増す安全保障環境を踏まえた上での技術的優位を確保しつつ、優れた装備品の創製を可能とするため、先進技術動向の把握と、これを踏まえた将来の研究開発の方向性を示す技術戦略の策定、...
 
@@ -75,38 +75,38 @@ block content
           h2 研究開発
       div.row
         div.col.s12.m4.center
-          i.material-icons play_arrow
+          i.material-icons note_add
           h5 装備開発官（統合装備）
           p 各種のミサイルとそれに関連する機器などの開発を行っています。
           p.center
             button.btn More
         div.col.s12.m4.center
-          i.material-icons play_arrow
+          i.material-icons note_add
           h5 装備開発官（陸上装備）
           p 陸上で使用する火砲、弾薬、戦闘車両及び指揮・統制・通信・情報システムなどの装備品等（誘導武器を除く。）の開発を行っています。
           p.center
             button.btn More
         div.col.s12.m4.center
-          i.material-icons play_arrow
+          i.material-icons note_add
           h5 装備開発官（艦艇装備）
           p 船舶とそれに搭載する機器、武器などの開発を行っています。
           p.center
             button.btn More
       div.row
         div.col.s12.m4.center
-          i.material-icons play_arrow
+          i.material-icons note_add
           h5 装備開発官（航空装備）
           p 航空機とそれに搭載するエンジン、アビオニクスなどの開発を行っています。
           p.center
             button.btn More
         div.col.s12.m4.center
-          i.material-icons play_arrow
+          i.material-icons note_add
           h5 陸上装備研究所
           p 火器、弾火薬類、耐弾材料、耐爆構造、車両、車両用機器、施設器材などの調査研究を行っています。
           p.center
             button.btn More
         div.col.s12.m4.center
-          i.material-icons play_arrow
+          i.material-icons note_add
           h5 艦艇装備研究所
           p 船舶、船舶用機器、水中武器、音響器材、磁気器材及び掃海器材のシステム化技術とこれらの要素技術について研究を行っています。
           p.center
@@ -134,6 +134,13 @@ block content
       div.container
         © 2014 Copyright Text
 
+  div#modal.modal
+    div.modal-content
+      p
+        | このページは<a href='http://phiary.me'>phiary.me</a> のいち企画として作ったのもです.
+      p
+        | 防衛装備庁の<a href='http://www.mod.go.jp/atla/index.html'>HP</a>を個人的にアレンジしたものでありオリジナルとは関係ありません.
+        | テキスト等はこちらと wikipedia のものを引用しています.
 
   script.
     $(document).ready(function(){
@@ -143,4 +150,6 @@ block content
         indicators: false,
       });
       $('.parallax').parallax();
+
+      $('#modal').openModal();
     });
